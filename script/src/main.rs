@@ -7,8 +7,8 @@ use image::ImageBuffer;
 
 // TODO: make these CLI arguments (ignored now for simplicity)
 const ELF: &[u8] = include_bytes!("../../program/elf/riscv32im-succinct-zkvm-elf");
-const ROM: &[u8] = include_bytes!("../roms/Zelda.nes");
-const REPLAY: &[u8] = include_bytes!("../replays/nes-input-history-zelda");
+const ROM: &[u8] = include_bytes!("../roms/MarioBros.nes");
+const REPLAY: &[u8] = include_bytes!("../replays/nes-input-history-mario-bros");
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct ControllerEvent {
